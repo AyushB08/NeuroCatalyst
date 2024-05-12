@@ -5,8 +5,9 @@ import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
 import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js';
 import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
 
+const canvinfo = document.getElementById('myCanvas').getBoundingClientRect();
 const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 100 );
+const camera = new THREE.PerspectiveCamera( 75, canvinfo.width / canvinfo.height , 0.1, 100 );
 
 const renderer = new THREE.WebGLRenderer({ antialias: true, canvas: myCanvas});
 renderer.setSize( window.innerWidth, window.innerHeight );
@@ -28,7 +29,12 @@ loader.load( 'static/out.glb', function ( gltf ) {
 
 } );
 
-camera.position.z+=1.6;
+let scrollPercent=((document.documentElement.scrollTop || document.body.scrollTop) /
+    ((document.documentElement.scrollHeight ||
+        document.body.scrollHeight) -
+        document.documentElement.clientHeight));
+
+camera.position.z=1.6*(1-scrollPercent);
 camera.position.y+=0.15;
 
 const composer = new EffectComposer( renderer );
@@ -37,7 +43,7 @@ const renderPass = new RenderPass( scene, camera );
 composer.addPass( renderPass );
 
 const ubloomPass = new UnrealBloomPass(
-  new THREE.Vector2(window.innerWidth,window.innerHeight),
+  new THREE.Vector2(canvinfo.width,canvinfo.height),
   0.3,
   0.2,
   0.1
@@ -46,6 +52,27 @@ composer.addPass( ubloomPass );
 
 const outputPass = new OutputPass();
 composer.addPass( outputPass );
+
+
+
+document.body.onscroll = () => {
+    //calculate the current scroll progress as a percentage
+    scrollPercent =
+        ((document.documentElement.scrollTop || document.body.scrollTop) /
+            ((document.documentElement.scrollHeight ||
+                document.body.scrollHeight) -
+                document.documentElement.clientHeight));
+      camera.position.z=1.6*(1-scrollPercent);
+}
+
+
+window.addEventListener('resize', onWindowResize, false)
+function onWindowResize() {
+    camera.aspect = window.innerWidth / window.innerHeight
+    camera.updateProjectionMatrix()
+    renderer.setSize(window.innerWidth, window.innerHeight)
+    render()
+}
 
 function animate() {
 	requestAnimationFrame( animate );

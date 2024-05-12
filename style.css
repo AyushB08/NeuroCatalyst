@@ -49,11 +49,105 @@ a {
 }
 
 #myCanvas {
-  position: absolute;
+  position: fixed;
+  top:0;
+  left:0;
   z-index: -10;
-  opacity: 70%;
+  opacity: 60%;
+  width:100%;
+  height:100%;
 }
 
 .wrapper {
   padding: 3em 5em;
+}
+
+header {
+  display : flex;
+  justify-content: space-between;
+  margin-bottom : 12em;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  gap: 2em;
+}
+
+.logo img {
+  width: 6em;
+}
+
+.logo h2 {
+  font-size: 1.8rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  margin: auto;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  align-items: center;
+  width: 20%;
+}
+
+nav img {
+  flex-shrink: 0;
+  width: 4em;
+}
+
+nav p {
+  width: 100%;
+  text-align: right;
+  margin:auto;
+  opacity: 50%;
+}
+
+nav a {
+  display:none;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.splash {
+  width:60%;
+  font-size: 2rem;
+  font-family: "Major Mono Display", monospace;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  margin-bottom: 30em; /* Space between mains, probably will be tweaked*/
+}
+
+.stats {
+    font-family: "Inter",sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 3em;
+    margin-bottom: 25em;
+}
+
+.stats h1 {
+  text-align: center;
+  font-size: 5rem;
+}
+
+.statbox {
+  display : flex;
+  flex-direction: row;
+  gap : 6em;
 }
