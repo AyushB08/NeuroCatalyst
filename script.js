@@ -54,7 +54,6 @@ const outputPass = new OutputPass();
 composer.addPass( outputPass );
 
 
-
 document.body.onscroll = () => {
     //calculate the current scroll progress as a percentage
     scrollPercent =
@@ -63,6 +62,8 @@ document.body.onscroll = () => {
                 document.body.scrollHeight) -
                 document.documentElement.clientHeight));
       camera.position.z=1.6*(1-scrollPercent);
+      newValue = window.pageYOffset;
+
 }
 
 

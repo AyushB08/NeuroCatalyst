@@ -138,7 +138,7 @@ nav a {
     flex-direction: column;
     align-content: center;
     gap: 3em;
-    margin-bottom: 25em;
+    margin-bottom: 60em;
 }
 
 .stats h1 {
@@ -150,4 +150,44 @@ nav a {
   display : flex;
   flex-direction: row;
   gap : 6em;
+}
+
+.services {
+  padding-top: 5em;
+  display : flex;
+  flex-direction: column;
+  gap : 5em;
+  font-family : "Inter", sans-serif;
+  text-align: center;
+
+}
+
+.services h1 {
+  text-align: center;
+  font-size: 5rem;
+}
+
+.services-list {
+  display : flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+.service {
+  border-radius: 20px;
+  align-content: center;
+  justify-content: center;
+  padding : 3em;
+  width: 25%;
+  display : flex;
+  flex-direction: column;
+  gap: 3em;
+  backdrop-filter: blur(40px);
+  box-shadow: 5px 5px 5px black;
+}
+
+.service > img {
+  margin: 0px auto;
+  width:80%;
 }
