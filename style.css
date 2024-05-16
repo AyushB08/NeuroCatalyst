@@ -159,7 +159,7 @@ nav a {
   gap : 5em;
   font-family : "Inter", sans-serif;
   text-align: center;
-
+  margin-bottom: 5em;
 }
 
 .services h1 {
@@ -190,4 +190,34 @@ nav a {
 .service > img {
   margin: 0px auto;
   width:80%;
+}
+
+.mission {
+  font-family : "Inter", sans-serif;
+  text-align: center;
+  display : flex;
+  flex-direction : column;
+  gap : 3em;
+  align-content: center;
+}
+
+.mission h1 {
+    font-size: 5rem;
+}
+
+.mission-text img {
+  flex-shrink : 0;
+  width: 20%;
+}
+
+.mission-text {
+  display : flex;
+  flex-direction: row;
+  gap: 3em;
+  width: 80%;
+  margin: 0px auto;
+  backdrop-filter: blur(40px);
+  box-shadow: 5px 5px 5px black;
+  border-radius: 20px;
+  padding : 3em;
 }
