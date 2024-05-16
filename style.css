@@ -111,8 +111,12 @@ nav p {
   opacity: 50%;
 }
 
-nav a {
+.navlinks {
   display:none;
+}
+
+nav a {
+  
 }
 
 .body {
