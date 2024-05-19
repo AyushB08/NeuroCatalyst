@@ -62,10 +62,13 @@ a {
   padding: 3em 5em;
 }
 
-header {
+.topbar {
   display : flex;
   justify-content: space-between;
-  margin-bottom : 12em;
+}
+
+header {
+    margin-bottom : 12em;
 }
 
 .logo {
@@ -87,21 +90,27 @@ header {
   margin: auto;
 }
 
+.stick {
+  display: flex;
+  flex-direction : row;
+  gap: 2em;
+}
+
 nav {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 2em;
   font-size: 1rem;
   font-family: "Inter", sans-serif;
   font-weight: 600;
   font-style: normal;
   align-items: center;
-  width: 20%;
+  /* width: 70%; */
 }
 
-nav img {
+nav >img {
   flex-shrink: 0;
-  width: 4em;
+  width: 5rem;
 }
 
 nav p {
@@ -109,27 +118,62 @@ nav p {
   text-align: right;
   margin:auto;
   opacity: 50%;
+  transition: all 0.5s linear;
 }
 
-.navlinks {
-  display:none;
+nav p:hover {
+  opacity: 100%;
 }
 
-nav a {
-  
+#navlinks a.fadeIn {
+  opacity: 1;
 }
+
+#navlinks {
+  display :flex;
+  position : absolute;
+  flex-direction: column;
+  gap: 2em;
+  color : #FFFFFF;
+  width: fit-content;
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+  right: 0.7rem;
+  top: -10em;
+}
+
+#navlinks a {
+  opacity: 0;
+  text-align: center;
+  color: #FFFFFF;
+  -webkit-transition: all 1s linear;
+  -moz-transition: all 1s linear;
+  -o-transition: all 1s linear;
+  transition: all 1s linear;
+}
+
+#navlinks a:nth-child(2) { transition-delay: .1s }
+#navlinks a:nth-child(3) { transition-delay: .2s }
+#navlinks a:nth-child(4) { transition-delay: .3s }
+#navlinks a:nth-child(5) { transition-delay: .4s }
+#navlinks a:nth-child(6) { transition-delay: .5s }
+#navlinks a:nth-child(7) { transition-delay: .6s }
+#navlinks a:nth-child(8) { transition-delay: .7s }
+
 
 .body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position : relative;
 }
 
 .splash {
   width:60%;
   font-size: 2rem;
   font-family: "Major Mono Display", monospace;
+  text-shadow: 0px 0px 5px #FFF;
   font-weight: 400;
   font-style: normal;
   text-align: center;
@@ -175,7 +219,6 @@ nav a {
   display : flex;
   flex-direction: row;
   justify-content: space-around;
-
 }
 
 .service {
@@ -189,6 +232,8 @@ nav a {
   gap: 3em;
   backdrop-filter: blur(40px);
   box-shadow: 5px 5px 5px black;
+  opacity: 0;
+  animation-fill-mode: forwards;
 }
 
 .service > img {
@@ -203,6 +248,7 @@ nav a {
   flex-direction : column;
   gap : 3em;
   align-content: center;
+  align-items: center;
 }
 
 .mission h1 {
@@ -210,8 +256,8 @@ nav a {
 }
 
 .mission-text img {
-  flex-shrink : 0;
-  width: 20%;
+  width: 100%;
+  object-fit: contain;
 }
 
 .mission-text {
@@ -225,3 +271,54 @@ nav a {
   border-radius: 20px;
   padding : 3em;
 }
+
+.links {
+
+  display: flex;
+  flex-direction:row;
+  gap: 2em;
+  width: fit-content;
+  align-content: center;
+
+}
+
+.contact-us {
+  padding: 2em;
+  margin-top: 10em;
+  display: flex;
+  flex-direction : column;
+  gap: 2em;
+  width: fit-content;
+  align-content: center;
+  text-align: center;
+    font-family: "Inter", sans-serif;
+  font-size: 1em;
+}
+
+.contact-us img {
+  width: 3em;
+}
+
+.links p {
+  font-family: "Inter", sans-serif;
+  font-size: 2em;
+}
+
+@keyframes slide {
+  0% {
+    transform: translate(0px,5px) scale(1.2);
+    opacity: 0%;
+  }
+  100% {
+    transform: translate(0px,0px) scale(1);
+    opacity: 100%;
+  }
+}
+
+.slideIn {
+  animation : slide 0.5s cubic-bezier(.18,.89,.32,1.28);
+  animation-fill-mode: both;
+}
+#service-list{ animation-delay : 0.3s}
+#two{ animation-delay: 0.5s;}
+#three{ animation-delay: 1s;}

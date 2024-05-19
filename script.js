@@ -13,7 +13,7 @@ const renderer = new THREE.WebGLRenderer({ antialias: true, canvas: myCanvas});
 renderer.setSize( window.innerWidth, window.innerHeight );
 // document.body.appendChild( renderer.domElement );
 
-var thing;
+let thing;
 
 const loader = new GLTFLoader();
 
@@ -53,6 +53,7 @@ composer.addPass( ubloomPass );
 const outputPass = new OutputPass();
 composer.addPass( outputPass );
 
+let newValue;
 
 document.body.onscroll = () => {
     //calculate the current scroll progress as a percentage
@@ -74,6 +75,46 @@ function onWindowResize() {
     renderer.setSize(window.innerWidth, window.innerHeight)
     render()
 }
+
+function links() {
+  let l = document.getElementById("navlinks");
+  var children=l.children;
+  if (  window.getComputedStyle(l).display==="none") {
+    l.style.display="flex";
+    for (var i = 0; i < children.length; i++) {
+      var tableChild = children[i];
+      tableChild.classList.toggle("fadeIn");
+    }
+  } else {
+    for (var i = 0; i < children.length; i++) {
+      var tableChild = children[i];
+      tableChild.classList.toggle("fadeIn");
+    }
+    // l.style.display="none";
+  }
+}
+let listen = document.getElementById("brain");
+listen.addEventListener("click",links);
+
+function handleIntersection(entries) {
+  entries.map((entry) => {
+    if (entry.isIntersecting) {
+      for (var i=0;i<target.children.length;i++){
+        target.children[i].classList.add('slideIn');
+      }
+    }
+    else {
+      for (var i=0;i<target.children.length;i++){
+        target.children[i].classList.remove('slideIn');
+      }
+    }
+  });
+}
+
+let observer = new IntersectionObserver(handleIntersection);
+let target = document.getElementById("service-list");
+observer.observe(target);
+
 
 function animate() {
 	requestAnimationFrame( animate );

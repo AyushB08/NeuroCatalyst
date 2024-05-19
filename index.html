@@ -16,31 +16,40 @@
     <canvas id="myCanvas"></canvas>
     <div class="wrapper">
       <header>
-        <div class="logo">
-          <img src="static\logo.png" alt="">
-          <h2>NeuroCatalyst</h2>
-        </div>
-        <nav>
-          <p id="menu">m e n u</p>
-          <div id="navlinks">
-            <a href="#">impact</a>
-            <a href="#">services</a>
-            <a href="#">mission</a>
-            <a href="#">research</a>
-            <a href="#">contact</a>
-            <a href="#">donate</a>
+        <div class="topbar">
+          <div class="logo">
+            <img src="static\logo.png" alt="">
+            <h2>NeuroCatalyst</h2>
           </div>
-          <img src="static\brain.png" alt="">
-        </nav>
+          <nav>
+            <div class="stick">
+              <p id="menu">m e n u</p>
+              <img src="static\brain.png" alt="" id="brain">
+            </div>
+
+          </nav>
+        </div>
+
+
+
       </header>
 
       <div class="body">
+        <div id="navlinks">
+          <a href="#impact">impact</a>
+          <a href="#services">services</a>
+          <a href="#mission">mission</a>
+          <a href="#">spotlight</a>
+          <a href="#">team</a>
+          <a href="#">join us</a>
+          <a href="https://hcb.hackclub.com/donations/start/neurocatalyst">donate</a>
+        </div>
 
         <main class="splash">
           <h1>Conquering Parkinson's stride by stride</h1>
         </main>
 
-        <main class="stats">
+        <main class="stats" id="impact">
           <h1>Our Impact</h1>
           <div class="statbox">
 
@@ -72,21 +81,21 @@
           </div>
         </main>
 
-        <main class="services">
+        <main class="services" id="services">
           <!-- frosted bg effect, not sure how to implement, let's see idk -->
           <h1>Our Services</h1>
-          <div class="services-list">
+          <div class="services-list" id="service-list">
             <div class="service">
               <img src="static\awareness.png" alt="">
               <h3>Parkinson's Awareness</h3>
               <p>At NeuroCatalyst, we have taken notice to the lack of awareness about Parkinson's. This is why we will raise Parkinson's awareness through our workshops, events, and community outreach programs.</p>
             </div>
-            <div class="service">
+            <div class="service" id="two">
               <img src="static\medicine.png" alt="">
               <h3>Financial Assistance</h3>
               <p>We understand that Parkinson's can take a significant financial toll on families. That's why we will provide financial assistance and discounted medicines to Parkinson's victims and their families, helping them get the care and support they need.</p>
             </div>
-            <div class="service">
+            <div class="service" id="three">
               <img src="static\research.png" alt="">
               <h3>Algorithm Development</h3>
               <p>Our team will be dedicated to developing algorithms that can assist Parkinson's victims in their day-to-day lives. We believe that technology can be a powerful tool in the fight against Parkinson's disease. We also believe that expanding knowledge regarding Parkinson's is important so we publish research papers too.</p>
@@ -94,15 +103,29 @@
           </div>
         </main>
 
-        <main class="mission">
+        <main class="mission" id="mission">
           <h1>Our Mission</h1>
           <div class="mission-text">
             <img src="static\love.png" alt="">
-            <p>NeuroCatalyst is driven by immense feelings of care for those who suffer from Parkinson's; we are devoted to making their lives easier by creating helpful new tools and standing up for them. By crafting specific algorithms we aid Parkinson's victim's daily lives. We understand all of the big and small struggles Parkinson's patients encounter and their drive to find new ways to improve their daily lives.
-  In addition, our team at NeuroCatalyst understands how essential it is to provide financial aid and to spread awareness among communities to inform people about Parkinson's. We aim to ease the money worries of those fighting against the stigma attached to the disease and the disease itself all while making sure the voices of the impacted are heard loud and clear. We are dedicated to building a more caring and helpful world for anyone affected by this disease.</p>
+            <p>NeuroCatalyst is driven by immense feelings of care for those who suffer from Parkinson's; we are devoted to making their lives easier by creating helpful new tools and standing up for them. By crafting specific algorithms we aid Parkinson's victim's daily lives. We understand all of the big and small struggles Parkinson's patients encounter and their drive to find new ways to improve their daily lives. In addition, our team at NeuroCatalyst understands how essential it is to provide financial aid and to spread awareness among communities to inform people about Parkinson's. We aim to ease the money worries of those fighting against the stigma attached to the disease and the disease itself all while making sure the voices of the impacted are heard loud and clear. We are dedicated to building a more caring and helpful world for anyone affected by this disease.</p>
 
           </div>
         </main>
+
+        <main class="contact-us" id="contact">
+          <div class="links">
+            <p>-</p>
+            <a href="https://discord.gg/n6Et39M2Bs"><img src="static\discord.png" alt=""></a>
+            <a href="https://www.tiktok.com/@neurocatalyst?_t=8l3rgLsFCNW&_r=1"><img src="static\tiktok.png" alt=""></a>
+            <a href="https://www.instagram.com/neurocatalyst/"><img src="static\insta.png" alt=""></a>
+            <a href="https://www.linkedin.com/company/neurocatalyst/?viewAsMember=true"><img src="static\linkedin.png" alt=""></a>
+            <a href="mailto:neurocatalystofficial@gmail.com"><img src="static\email.png" alt=""></a>
+            <a href="tel:+12487815698"><img src="static\phone.png" alt=""></a>
+            <p>-</p>
+          </div>
+          <p>© 2024 by NeuroCatalyst.</p>
+        </main>
+
       </div>
     </div>
   </body>
