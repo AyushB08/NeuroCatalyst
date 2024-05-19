@@ -329,3 +329,74 @@ nav p:hover {
 #service-list{ animation-delay : 0.3s}
 #two{ animation-delay: 0.5s;}
 #three{ animation-delay: 1s;}
+
+
+/* spotlight css begins here */
+
+
+.spot-container {
+  margin-top: -5em;
+  font-family: "Inter", sans-serif;
+  display : flex;
+  flex-direction : column;
+  gap: 5em;
+  max-width: 100vw;
+}
+
+.research {
+  margin : 0px auto;
+  width: 80%;
+  display : flex;
+  flex-direction : column;
+  gap: 3em;
+}
+
+.research h1 {
+  font-size: 4em;
+  text-align : center;
+}
+
+.articles {
+  display: flex;
+
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+
+
+
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  gap: 3em;
+}
+
+.articles::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.articles::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.article {
+  width: 100%;
+  background-color: rgb(14,14,14,0.3);
+  padding: 4em;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 20px;
+  display : flex;
+  flex-direction : column;
+  gap: 2em;
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  transform-origin: center center;
+transform: scale(1);
+transition: transform 0.5s;
+position: relative;
+}
+
+.images {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+}

@@ -17,7 +17,7 @@ let thing;
 
 const loader = new GLTFLoader();
 
-loader.load( 'static/out.glb', function ( gltf ) {
+loader.load( 'static/neuron.glb', function ( gltf ) {
 
   const model=gltf.scene
   thing=model;
@@ -34,8 +34,9 @@ let scrollPercent=((document.documentElement.scrollTop || document.body.scrollTo
         document.body.scrollHeight) -
         document.documentElement.clientHeight));
 
-camera.position.z=1.6*(1-scrollPercent);
+// camera.position.z=1.6*(1-scrollPercent);
 camera.position.y+=0.15;
+camera.position.z=5;
 
 const composer = new EffectComposer( renderer );
 
@@ -44,9 +45,9 @@ composer.addPass( renderPass );
 
 const ubloomPass = new UnrealBloomPass(
   new THREE.Vector2(canvinfo.width,canvinfo.height),
-  0.3,
-  0.2,
-  0.1
+  0.45,
+  1,
+  0.5
 );
 composer.addPass( ubloomPass );
 
@@ -55,18 +56,18 @@ composer.addPass( outputPass );
 
 let newValue;
 
-document.body.onscroll = () => {
-    //calculate the current scroll progress as a percentage
-    scrollPercent =
-        ((document.documentElement.scrollTop || document.body.scrollTop) /
-            ((document.documentElement.scrollHeight ||
-                document.body.scrollHeight) -
-                document.documentElement.clientHeight));
-      camera.position.z=1.6*(1-scrollPercent);
-      newValue = window.pageYOffset;
-
-}
-
+// document.body.onscroll = () => {
+//     //calculate the current scroll progress as a percentage
+//     scrollPercent =
+//         ((document.documentElement.scrollTop || document.body.scrollTop) /
+//             ((document.documentElement.scrollHeight ||
+//                 document.body.scrollHeight) -
+//                 document.documentElement.clientHeight));
+//       camera.position.z=1.6*(1-scrollPercent);
+//       newValue = window.pageYOffset;
+//
+// }
+document.getElementById('myCanvas').style.opacity="0.4";
 
 window.addEventListener('resize', onWindowResize, false)
 function onWindowResize() {
@@ -95,7 +96,7 @@ function links() {
 }
 let listen = document.getElementById("brain");
 listen.addEventListener("click",links);
-// 
+//
 // function handleIntersection(entries) {
 //   entries.map((entry) => {
 //     if (entry.isIntersecting) {
