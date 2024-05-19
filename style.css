@@ -88,6 +88,11 @@ header {
   font-weight: 600;
   font-style: normal;
   margin: auto;
+  transition : all linear 0.3s;
+}
+
+.logo h2:hover {
+  transform: rotate3d(1,0,0,180deg);
 }
 
 .stick {
@@ -127,6 +132,7 @@ nav p:hover {
 
 #navlinks a.fadeIn {
   opacity: 1;
+  transform: translateY(0px);
 }
 
 #navlinks {
@@ -146,6 +152,7 @@ nav p:hover {
   opacity: 0;
   text-align: center;
   color: #FFFFFF;
+  transform: translateY(-10px);
   -webkit-transition: all 1s linear;
   -moz-transition: all 1s linear;
   -o-transition: all 1s linear;
