@@ -5,14 +5,15 @@
     <title>NeuroCatalyst</title>
     <link rel="stylesheet" href="style.css">
     <base href="/">
-    <script type="importmap"> {
-			"imports": {
-				"three": "/node_modules/three/build/three.js",
-				"three/addons/": "/node_modules/three/examples/jsm/",
-				"three/nodes": "/node_modules/three/examples/jsm/nodes/Nodes.js"
-    		}
-		}
-		</script>
+    <script type="importmap">
+{
+  "imports": {
+    "three": "/node_modules/three/build/three.module.js",
+    "three/addons/": "/node_modules/three/examples/jsm/",
+    "three/nodes/": "/node_modules/three/examples/jsm/nodes/"
+  }
+}
+</script>
     <script defer type="module" src="script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,6 +23,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Major+Mono+Display&display=swap" rel="stylesheet">
   </head>
   <body>
+
     <canvas id="myCanvas"></canvas>
     <div class="wrapper">
       <header>
