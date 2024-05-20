@@ -85,6 +85,7 @@ header {
 .logo h2 {
   font-size: 1.8rem;
   font-family: "Inter", sans-serif;
+  color: white;
   font-weight: 600;
   font-style: normal;
   margin: auto;
@@ -278,6 +279,8 @@ nav p:hover {
   box-shadow: 5px 5px 5px black;
   border-radius: 20px;
   padding : 3em;
+  justify-content: center;
+  align-items: center;
 }
 
 .join-us {
@@ -617,4 +620,44 @@ position: relative;
 .algorithms h1 {
   font-size: 4em;
   text-align : center;
+}
+
+.emergency {
+  display : flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1250px) {
+  header {
+    margin-bottom: 46em;
+  }
+  .splash {
+    margin-bottom: 40em;
+  }
+  .services-list {
+    flex-direction :column;
+    gap: 3em;
+  }
+  .service {
+    width: 100%;
+    flex-direction : row;
+  }
+  .emergency {
+    justify-content: space-around;
+  }
+  .mission-text {
+    flex-direction: column;
+  }
+  .mission-text img {
+    width: 50%;
+  }
+  .join-us {
+    margin-top: 40em;
+  }
+  .join-us h1 {
+    width: 200%;
+  }
+  .special {
+    flex-direction: column;
+  }
 }
