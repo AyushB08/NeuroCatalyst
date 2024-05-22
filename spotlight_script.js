@@ -5,6 +5,7 @@ import { RenderPass } from './node_modules/three/examples/jsm/postprocessing/Ren
 import { UnrealBloomPass } from './node_modules/three/examples/jsm/postprocessing/UnrealBloomPass.js';
 import { OutputPass } from './node_modules/three/examples/jsm/postprocessing/OutputPass.js';
 
+
 const canvinfo = document.getElementById('myCanvas').getBoundingClientRect();
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera( 75, canvinfo.width / canvinfo.height , 0.1, 100 );
