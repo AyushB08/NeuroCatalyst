@@ -1,3 +1,5 @@
+/* Styles */
+
 *, *::after, *::before {
   box-sizing: border-box;
 }
@@ -485,6 +487,8 @@ nav p:hover {
     opacity: 100%;
   }
 }
+
+
 
 .slideIn {
   animation : slide 0.5s cubic-bezier(.18,.89,.32,1.28);
