@@ -74,7 +74,7 @@ function onWindowResize() {
     camera.aspect = window.innerWidth / window.innerHeight
     camera.updateProjectionMatrix()
     renderer.setSize(window.innerWidth, window.innerHeight)
-    render()
+    composer.render()
 }
 
 function links() {
@@ -97,24 +97,24 @@ function links() {
 let listen = document.getElementById("brain");
 listen.addEventListener("click",links);
 
-function handleIntersection(entries) {
-  entries.map((entry) => {
-    if (entry.isIntersecting) {
-      for (var i=0;i<target.children.length;i++){
-        target.children[i].classList.add('slideIn');
-      }
-    }
-    else {
-      for (var i=0;i<target.children.length;i++){
-        target.children[i].classList.remove('slideIn');
-      }
-    }
-  });
-}
-
-let observer = new IntersectionObserver(handleIntersection);
-let target = document.getElementById("service-list");
-observer.observe(target);
+// function handleIntersection(entries) {
+//   entries.map((entry) => {
+//     if (entry.isIntersecting) {
+//       for (var i=0;i<target.children.length;i++){
+//         target.children[i].classList.add('slideIn');
+//       }
+//     }
+//     else {
+//       for (var i=0;i<target.children.length;i++){
+//         target.children[i].classList.remove('slideIn');
+//       }
+//     }
+//   });
+// }
+//
+// let observer = new IntersectionObserver(handleIntersection);
+// let target = document.getElementById("service-list");
+// observer.observe(target);
 
 
 function animate() {
