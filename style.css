@@ -129,7 +129,7 @@ nav p {
   transition: all 0.5s linear;
 }
 
-nav p:hover {
+.stick:hover>nav p {
   opacity: 100%;
 }
 
