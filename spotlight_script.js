@@ -1,10 +1,9 @@
 import * as THREE from 'three';
-import { GLTFLoader } from 'three/addons/jsm/loaders/GLTFLoader.js';
-import { EffectComposer } from 'three/addons/jsm/postprocessing/EffectComposer.js';
-import { RenderPass } from 'three/addons/jsm/postprocessing/RenderPass.js';
-import { UnrealBloomPass } from 'three/addons/jsm/postprocessing/UnrealBloomPass.js';
-import { OutputPass } from 'three/addons/jsm/postprocessing/OutputPass.js';
-
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
+import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
+import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js';
+import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
 
 const canvinfo = document.getElementById('myCanvas').getBoundingClientRect();
 const scene = new THREE.Scene();
