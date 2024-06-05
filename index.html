@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+<head>
     <script type="importmap">
       {
         "imports": {
@@ -20,199 +20,144 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Major+Mono+Display&display=swap" rel="stylesheet">
-
-  </head>
-  <body>
-
+</head>
+<body>
     <canvas id="myCanvas"></canvas>
     <div class="wrapper">
-      <header>
-        <div class="topbar">
-          <a href="index.html">
-          <div class="logo">
-            <img src="static\logo.png" alt="">
-            <h2>NeuroCatalyst</h2>
-          </div>
-          </a>
-          <nav>
-            <div class="stick">
-              <p id="menu">m e n u</p>
-              <img src="static\brain.png" alt="" id="brain">
+        <header>
+            <div class="topbar">
+                <a href="index.html">
+                <div class="logo">
+                    <img src="static/logo.png" alt="">
+                    <h2>NeuroCatalyst</h2>
+                </div>
+                </a>
+                <nav>
+                    <div class="stick">
+                        <div class="popup">
+                            <img src="static/brain.png" alt="" id="brain">
+                            <div class="popuptext" id="myPopup">
+                                <a href="spotlight.html">Spotlight</a>
+                                <a href="https://hcb.hackclub.com/donations/start/neurocatalyst">Donate</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <div class="body">
+            <div id="navlinks">
+                <a href="index.html#impact">impact</a>
+                <a href="index.html#services">services</a>
+                <a href="index.html#mission">mission</a>
+                <a href="spotlight.html">spotlight</a>
+                <a href="index.html#positions">join us</a>
+                <a href="https://hcb.hackclub.com/donations/start/neurocatalyst">donate</a>
             </div>
 
-          </nav>
+            <main class="splash">
+                <h1>Conquering Parkinson's stride by stride</h1>
+            </main>
+
+            <main class="mission" id="mission">
+                <h1>Our Mission</h1>
+                <div class="mission-text">
+                    <img src="static/love.png" alt="">
+                    <p>NeuroCatalyst is a 501(c)(3) organization driven by immense feelings of care for those who suffer from Parkinson's. With our Founder & CEOs experience with his dad who is a PD patients, he understands the issues that PD patients face. Even Michael J. Fox who was known for starring in Back to The Future noticed the lack of innovation for PD patients.</p>
+                </div>
+            </main>
+
+            <main class="stats" id="impact">
+                <h1>Our Impact</h1>
+                <div class="statbox">
+                    <div class="sub-box">
+                        <h2>1</h2>
+                        <p>Upcoming Workshop</p>
+                    </div>
+                    <div class="sub-box">
+                        <h2>25+</h2>
+                        <p>Dedicated Volunteers</p>
+                    </div>
+                    <div class="sub-box">
+                        <h2>5+</h2>
+                        <p>Countries Impacted</p>
+                    </div>
+                    <div class="sub-box">
+                        <h2>1</h2>
+                        <p>App In Development</p>
+                    </div>
+                </div>
+            </main>
+
+            <main class="services" id="services">
+                <h1>Our Services</h1>
+                <div class="services-list" id="service-list">
+                    <div class="service">
+                        <img src="static/awareness.png" alt="">
+                        <div class="emergency">
+                            <h3>Parkinson's Awareness</h3>
+                            <p>At NeuroCatalyst, we have taken notice to the lack of awareness about Parkinson's. This is why we will raise Parkinson's awareness through our workshops, events, and other community outreach programs.</p>
+                        </div>
+                    </div>
+                    <div class="service" id="two">
+                        <img src="static/research.png" alt="">
+                        <div class="emergency">
+                            <h3>Application/Research Development</h3>
+                            <p>At NeuroCatalyst, we are developing applications that can assist Parkinson's victims in their day-to-day lives. We believe that technology can be a powerful tool in the fight against Parkinson's disease. For the tech we develop, we will also publish research papers.</p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <main class="positions" id="positions">
+                <div class="special">
+                    <h1>Open Positions</h1>
+                    <div class="positions-grid">
+                        <div class="position">
+                            <h3>Full-stack Developer</h3>
+                            <p>Skills: MERN, full-stack, Firebase, and Python</p>
+                        </div>
+                        <div class="position">
+                            <h3>Front-End Developer</h3>
+                            <p>Skills: HTML, CSS, Javascript, React, and Expo</p>
+                        </div>
+                        <div class="position">
+                            <h3>AI/ML Specialist</h3>
+                            <p>Skills: Python, Tensorflow, Expo SDK, and PyTorch</p>
+                        </div>
+                        <div class="position">
+                            <h3>Chapter Director</h3>
+                            <p>Skills: Leadership, Communication, Marketing, Public Speaking, Advocacy, Fundraising</p>
+                        </div>
+                        <div class="position">
+                            <h3>Researcher</h3>
+                            <p>Skills: HTML, CSS, Javascript, and GitHub</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-links">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSds9RQCMe3DGVFU0ijJtwgUEY-e6Fo2lFjK8EZCHVAWY0r0WA/viewform">Volunteer Application</a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScbGuegWlMEhMm_tjTKH0javSDeWH_ydNQDycYt8g0GNPFbSA/viewform">Officer/Director Application</a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd4NDVRPayQ4d1aS6iH-UHP-KWfmvSitcqSj5hqET5gZ3he5g/viewform">Chapter Creation Application</a>
+                    <a href="https://docs.google.com/document/d/1dAoTzzvodcB-U_8e1b0KYb3dneQpc9z8U3rUEDu61-A/edit">Participant Handbook</a>
+                </div>
+            </main>
+
+            <main class="contact-us" id="contact">
+                <div class="links">
+                    <p>-</p>
+                    <a href="https://discord.gg/n6Et39M2Bs"><img src="static/discord.png" alt=""></a>
+                    <a href="https://www.tiktok.com/@neurocatalyst?_t=8l3rgLsFCNW&_r=1"><img src="static/tiktok.png" alt=""></a>
+                    <a href="https://www.instagram.com/neurocatalyst/"><img src="static/insta.png" alt=""></a>
+                    <a href="https://www.linkedin.com/company/neurocatalyst/?viewAsMember=true"><img src="static/linkedin.png" alt=""></a>
+                    <a href="mailto:neurocatalystofficial@gmail.com"><img src="static/email.png" alt=""></a>
+                    <a href="tel:+12487815698"><img src="static/phone.png" alt=""></a>
+                    <p>-</p>
+                </div>
+                <p>© 2024 by NeuroCatalyst.</p>
+            </main>
         </div>
-
-
-
-      </header>
-
-      <div class="body">
-        <div id="navlinks">
-          <a href="index.html#impact">impact</a>
-          <a href="index.html#services">services</a>
-          <a href="index.html#mission">mission</a>
-          <a href="spotlight.html">spotlight</a>
-          <a href="index.html#positions">join us</a>
-          <a href="https://hcb.hackclub.com/donations/start/neurocatalyst">donate</a>
-        </div>
-
-        <main class="splash">
-          <h1>Conquering Parkinson's stride by stride</h1>
-        </main>
-
-        <main class="stats" id="impact">
-          <h1>Our Impact</h1>
-          <div class="statbox">
-
-            <div class="sub-box">
-              <h2>1</h2>
-              <p>Upcoming Workshop</p>
-            </div>
-
-            <div class="sub-box">
-              <h2>0</h2>
-              <p>Dollars raised</p>
-            </div>
-
-            <div class="sub-box">
-              <h2>25+</h2>
-              <p>Dedicated volunteers</p>
-            </div>
-
-            <div class="sub-box">
-              <h2>5+</h2>
-              <p>Countries impacted</p>
-            </div>
-
-            <div class="sub-box">
-              <h2>1</h2>
-              <p>App in development</p>
-            </div>
-
-          </div>
-        </main>
-
-        <main class="services" id="services">
-          <!-- frosted bg effect, not sure how to implement, let's see idk -->
-          <h1>Our Services</h1>
-          <div class="services-list" id="service-list">
-            <div class="service">
-              <img src="static\awareness.png" alt="">
-              <div class="emergency">
-                <h3>Parkinson's Awareness</h3>
-                <p>At NeuroCatalyst, we have taken notice to the lack of awareness about Parkinson's. This is why we will raise Parkinson's awareness through our workshops, events, and community outreach programs.</p>
-              </div>
-            </div>
-            <div class="service" id="two">
-              <img src="static\medicine.png" alt="">
-              <div class="emergency">
-                <h3>Financial Assistance</h3>
-                <p>We understand that Parkinson's can take a significant financial toll on families. That's why we will provide financial assistance and discounted medicines to Parkinson's victims and their families, helping them get the care and support they need.</p>
-              </div>
-            </div>
-            <div class="service" id="three">
-              <img src="static\research.png" alt="">
-              <div class="emergency">
-                <h3>Algorithm Development</h3>
-                <p>Our team will be dedicated to developing algorithms that can assist Parkinson's victims in their day-to-day lives. We believe that technology can be a powerful tool in the fight against Parkinson's disease. We also believe that expanding knowledge regarding Parkinson's is important so we publish research papers too.</p>
-              </div>
-            </div>
-          </div>
-        </main>
-
-        <main class="mission" id="mission">
-          <h1>Our Mission</h1>
-          <div class="mission-text">
-            <img src="static\love.png" alt="">
-            <p>NeuroCatalyst is driven by immense feelings of care for those who suffer from Parkinson's; we are devoted to making their lives easier by creating helpful new tools and standing up for them. By crafting specific algorithms we aid Parkinson's victim's daily lives. We understand all of the big and small struggles Parkinson's patients encounter and their drive to find new ways to improve their daily lives. In addition, our team at NeuroCatalyst understands how essential it is to provide financial aid and to spread awareness among communities to inform people about Parkinson's. We aim to ease the money worries of those fighting against the stigma attached to the disease and the disease itself all while making sure the voices of the impacted are heard loud and clear. We are dedicated to building a more caring and helpful world for anyone affected by this disease.</p>
-
-          </div>
-
-        </main>
-
-        <main class="join-us" id="join">
-          <h1>Why <br> Join <br>  Us?</h1>
-          <div class="join-list" id="join-list">
-            <div class="join">
-              <h3>Make a Real Difference </h3>
-              <p>By becoming part of our team, you'll be able to make a tangible impact on the lives of Parkinson's patients who are struggling financially. Your contributions will directly help those in need by providing financial assistance for treatments, meds, and quality-of-life resources.</p>
-            </div>
-            <div class="join" id="two">
-
-              <h3>Raise Awareness</h3>
-              <p>Parkinson's disease isn't always understood or talked about as much as it should be. By joining us, you can help change that by raising awareness about the challenges patients face and the importance of early detection, access to treatment, and support. Your efforts will help educate communities and create more understanding and empathy for people living with Parkinson's</p>
-            </div>
-            <div class="join" id="three">
-
-              <h3>Lead Innovation</h3>
-              <p>We develop innovative new algorithms and tech solutions to help Parkinson's patients manage their symptoms and live better. As a member, you'll get to be at the forefront of innovation, working on projects that could totally transform the lives of millions of people with Parkinson's disease.</p>
-            </div>
-          </div>
-
-        </main>
-
-
-        <main class="positions" id="positions">
-                      <div class="special">
-          <h1>Open Positions</h1>
-          <div class="positions-grid">
-              <div class="position">
-                <h3>Software Engineer</h3>
-                <p>Skills: Programming and GitHub</p>
-              </div>
-              <div class="position">
-                <h3>Front-End Developer</h3>
-                <p>Skills: HTML, CSS, Javascript, and GitHub</p>
-              </div>
-              <div class="position">
-                <h3>AI/ML Specialist</h3>
-                <p>Skills: Python, Artificial Intelligence, Machine Learning, PyTorch and GitHub</p>
-              </div>
-              <div class="position">
-                <h3>Data Scientist</h3>
-                <p>Skills: Python, Artificial Intelligence, Machine Learning, PyTorch and GitHub</p>
-              </div>
-              <div class="position">
-                <h3>Chapter Director</h3>
-                <p>Skills: Leadership, Communication, Marketing, Public Speaking, Advocacy, Fundraising</p>
-              </div>
-              <div class="position">
-                <h3>Researcher</h3>
-                <p>Skills: HTML, CSS, Javascript, and GitHub</p>
-              </div>
-
-            </div>
-          </div>
-          <div class="form-links">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSds9RQCMe3DGVFU0ijJtwgUEY-e6Fo2lFjK8EZCHVAWY0r0WA/viewform">Volunteer Application</a>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScbGuegWlMEhMm_tjTKH0javSDeWH_ydNQDycYt8g0GNPFbSA/viewform">Officer/Director Application</a>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSd4NDVRPayQ4d1aS6iH-UHP-KWfmvSitcqSj5hqET5gZ3he5g/viewform">Chapter Creation Application</a>
-            <a href="https://docs.google.com/document/d/1dAoTzzvodcB-U_8e1b0KYb3dneQpc9z8U3rUEDu61-A/edit">Participant Handbook</a>
-          </div>
-        </main>
-
-
-
-        <main class="contact-us" id="contact">
-          <div class="links">
-            <p>-</p>
-            <a href="https://discord.gg/n6Et39M2Bs"><img src="static\discord.png" alt=""></a>
-            <a href="https://www.tiktok.com/@neurocatalyst?_t=8l3rgLsFCNW&_r=1"><img src="static\tiktok.png" alt=""></a>
-            <a href="https://www.instagram.com/neurocatalyst/"><img src="static\insta.png" alt=""></a>
-            <a href="https://www.linkedin.com/company/neurocatalyst/?viewAsMember=true"><img src="static\linkedin.png" alt=""></a>
-            <a href="mailto:neurocatalystofficial@gmail.com"><img src="static\email.png" alt=""></a>
-            <a href="tel:+12487815698"><img src="static\phone.png" alt=""></a>
-            <p>-</p>
-          </div>
-          <p>© 2024 by NeuroCatalyst.</p>
-        </main>
-
-
-
-
-
-      </div>
     </div>
-  </body>
+</body>
 </html>

@@ -1,8 +1,16 @@
 {
+  "name": "NeuroCatalyst",
+  "version": "1.0.0",
+  "type": "module",
   "dependencies": {
     "three": "^0.164.1"
   },
   "devDependencies": {
     "vite": "^5.2.11"
+  },
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
   }
 }

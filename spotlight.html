@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-
+<head>
     <script type="importmap">
       {
         "imports": {
@@ -21,131 +20,106 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Major+Mono+Display&display=swap" rel="stylesheet">
-
-  </head>
-  <body>
-
+</head>
+<body>
     <canvas id="myCanvas"></canvas>
     <div class="wrapper">
-      <header>
-        <div class="topbar">
-          <a href="index.html">
-          <div class="logo">
-            <img src="static\logo.png" alt="">
-            <h2>NeuroCatalyst</h2>
-          </div>
-          </a>
-          <nav>
-            <div class="stick">
-              <p id="menu">m e n u</p>
-              <img src="static\brain.png" alt="" id="brain">
+        <header>
+            <div class="topbar">
+                <a href="index.html">
+                <div class="logo">
+                    <img src="static/logo.png" alt="">
+                    <h2>NeuroCatalyst</h2>
+                </div>
+                </a>
+                <nav>
+                    <div class="stick">
+                        <div class="popup">
+                            <img src="static/brain.png" alt="" id="brain">
+                            <div class="popuptext" id="myPopup">
+                                <a href="spotlight.html">Spotlight</a>
+                                <a href="https://hcb.hackclub.com/donations/start/neurocatalyst">Donate</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <div class="body">
+            <div id="navlinks">
+                <a href="index.html#impact">impact</a>
+                <a href="index.html#services">services</a>
+                <a href="index.html#mission">mission</a>
+                <a href="spotlight.html">spotlight</a>
+                <a href="index.html#positions">join us</a>
+                <a href="https://hcb.hackclub.com/donations/start/neurocatalyst">donate</a>
             </div>
 
-          </nav>
-        </div>
+            <main class="spot-container">
+                <div class="research">
+                    <h1>Our Research</h1>
+                    <div class="bound-box">
+                        <div class="articles">
+                            <div class="article" id="one">
+                                <h2>The Neurology behind the Parkinson's Disease: A-Synucleinopathy and Dopamine Dysfunction</h2>
+                                <h4>Author : Sahasra Bathula</h4>
+                                <p>Parkinson’s disease also known as a-synucleinopathy, is a progressive neurodegenerative disease (destruction of specific nerve cells). Parkinson's restricts patient movement rendering them incapacitated during many periods throughout the day. This causes symptoms to get worse over time. Unfortunately, there is no cure for Parkinson’s disease. A protein called a-synuclein which is a water-soluble protein that lacks a three-dimensional structure, becomes an mis fold. This specific protein aggregates (meaning multiple things combining into one whole thing). These aggregations are also known as Lewy bodies. These Lewy bodies are laid down which causes nerve cells to damage and die. This happens to specific areas in the brain and body. This causes Parkinson’s disease to form. The most affected area of the brain is the substantia nigra. This is an area deep inside the brain which has a high percentage of dopamine nerve cells. This area is also crucial for dopamine production. Dopamine is a compound in the human body. It is a neurotransmitter. This causes dopamine to interfere with signaling. This changes a person’s movement and balance leading to Parkinson’s disease.</p>
+                                <div class="images">
+                                    <div class="image">
+                                        <img src="static/r1.png" alt="">
+                                        <a href="https://www.nature.com/articles/nrd.2017.95">The transformation of a a-synuclein to Lewy Body</a>
+                                    </div>
+                                    <div class="image">
+                                        <img src="static/r2.webp" alt="">
+                                        <a href="https://www.researchgate.net/figure/Substantia-Nigra-and-Dopamine-producing-cells_fig1_345208392">A picture of substantia nigra</a>
+                                    </div>
+                                </div>
+                            </div>
 
-
-
-      </header>
-
-      <div class="body">
-        <div id="navlinks">
-          <a href="index.html#impact">impact</a>
-          <a href="index.html#services">services</a>
-          <a href="index.html#mission">mission</a>
-          <a href="spotlight.html">spotlight</a>
-          <a href="index.html#positions">join us</a>
-          <a href="https://hcb.hackclub.com/donations/start/neurocatalyst">donate</a>
-        </div>
-
-        <main class="spot-container">
-          <div class="research">
-            <h1>Our Research</h1>
-            <div class="bound-box">
-
-              <div class="articles">
-
-                <div class="article" id="one">
-                  <!-- Template -->
-                  <!--  <h2>title</h2>
-                        <h4>author</h4>
-                        <p>main text</p>
-                        <img src="image" alt="">
-                   -->
-                   <h2>The Neurology behind the Parkinson's Disease: A-Synucleinopathy and Dopamine Dysfunction</h2>
-                   <h4>Author : Sahasra Bathula</h4>
-                   <p>Parkinson’s disease also known as a-synucleinopathy, is a progressive neurodegenerative disease (destruction of specific nerve cells). Parkinson's restricts patient movement rendering them incapacitated during many periods throughout the day. This causes symptoms to get worse over time. Unfortunately, there is no cure for Parkinson’s disease. A protein called a-synuclein which is a water-soluble protein that lacks a three-dimensional structure, becomes an mis fold. This specific protein aggregates (meaning multiple things combining into one whole thing). These aggregations are also known as Lewy bodies. These Lewy bodies are laid down which causes nerve cells to damage and die. This happens to specific areas in the brain and body. This causes Parkinson’s disease to form. The most affected area of the brain is the substantia nigra. This is an area deep inside the brain which has a high percentage of dopamine nerve cells. This area is also crucial for dopamine production. Dopamine is a compound in the human body. It is a neurotransmitter. This causes dopamine to interfere with signaling. This changes a person’s movement and balance leading to Parkinson’s disease.</p>
-                   <div class="images">
-                     <div class="image">
-                       <img src="static\r1.png" alt="">
-                       <a href="https://www.nature.com/articles/nrd.2017.95">The transformation of a a-synuclein to Lewy Body</a>
-                     </div>
-                     <div class="image">
-                       <img src="static\r2.webp" alt="">
-                       <a href="https://www.researchgate.net/figure/Substantia-Nigra-and-Dopamine-producing-cells_fig1_345208392">A picture of substantia nigra</a>
-                     </div>
-                   </div>
-                </div>
-
-                <div class="article" id="two">
-                  <h2>Understanding the Stages of Parkinson’s disease</h2>
-                  <h4>Author : Sahasra Bathula</h4>
-                  <p>Parkinson’s disease also known a-synucleinopathy, is a progressive neurodegenerative disease. There are five stages of Parkinson’s disease. Stage 1 and 2 are the early stages. Stage 2 and 3 are the mid-stages, and Stage 4 and 5 are the advanced stages. </p>
-                  <p>In stage 1, the person has mild symptoms that never really interfere with their daily activities. In this stage, there might be changes in posture, walking and facial expressions. </p>
-                  <p>In stage 2, the symptoms start getting worse. Movement symptoms can affect a person on both sides of the body and also the neck. The person will have problems with walking and they will have poor posture. Doing daily tasks are more difficult and lengthier. </p>
-                  <p>In stage 3, people could experience a loss of balance and falls are way more common. Motor symptoms get worse. It’s really hard for a person to do their daily tasks now. However, they are still capable of living an independent life. </p>
-                  <p>In stage 4, symptoms are fully developed. The person is still able to walk and stand without any assistance. However, they might a cane or walking stick to be safe. This person also needs help to complete daily tasks and are unable to live alone. </p>
-                  <p>In stage 5, the stiffness in a persons leg makes it impossible to stand or walk. The person needs a wheelchair to roam around and they need someone to help them with every activity they do. </p>
-                  <p>Those are all of the stages of Parkinson’s disease. As you can see, the symptoms get worse within every stage and it gets more difficult to do everyday tasks.</p>
-                  <div class="images">
-                    <div class="image">
-                      <img src="static\r3.webp" alt="">
+                            <div class="article" id="two">
+                                <h2>Understanding the Stages of Parkinson’s disease</h2>
+                                <h4>Author : Sahasra Bathula</h4>
+                                <p>Parkinson’s disease also known a-synucleinopathy, is a progressive neurodegenerative disease. There are five stages of Parkinson’s disease. Stage 1 and 2 are the early stages. Stage 2 and 3 are the mid-stages, and Stage 4 and 5 are the advanced stages.</p>
+                                <p>In stage 1, the person has mild symptoms that never really interfere with their daily activities. In this stage, there might be changes in posture, walking and facial expressions.</p>
+                                <p>In stage 2, the symptoms start getting worse. Movement symptoms can affect a person on both sides of the body and also the neck. The person will have problems with walking and they will have poor posture. Doing daily tasks are more difficult and lengthier.</p>
+                                <p>In stage 3, people could experience a loss of balance and falls are way more common. Motor symptoms get worse. It’s really hard for a person to do their daily tasks now. However, they are still capable of living an independent life.</p>
+                                <p>In stage 4, symptoms are fully developed. The person is still able to walk and stand without any assistance. However, they might a cane or walking stick to be safe. This person also needs help to complete daily tasks and are unable to live alone.</p>
+                                <p>In stage 5, the stiffness in a persons leg makes it impossible to stand or walk. The person needs a wheelchair to roam around and they need someone to help them with every activity they do.</p>
+                                <p>Those are all of the stages of Parkinson’s disease. As you can see, the symptoms get worse within every stage and it gets more difficult to do everyday tasks.</p>
+                                <div class="images">
+                                    <div class="image">
+                                        <img src="static/r3.webp" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="scroll-links">
+                            <a href="spotlight.html#one">1</a>
+                            <a href="spotlight.html#two">2</a>
+                        </div>
                     </div>
-                  </div>
                 </div>
-
-                <div class="article" id="three">
-                  <h2>The Role Of Genetics And Parkinson’s Disease</h2>
-                  <h4>Author: Sahasra Bathula</h4>
-                  <p>About 15% of people with Parkinson’s disease have a family history of the condition. Family-linked Parkinson’s disease cases can result from genetic mutations in a group of genes. There are five major genes that are known to contribute to Parkinson’s disease. These genes are SNCA, PARK2, PARK7, PINK1, and LRRK2. SNCA makes a protein called alpha-synuclein. In brain cells of individuals with Parkinson’s disease, alpha-synuclein gathers in clumps. These clumps are called Lewy bodies. These clumps cause Parkinson’s disease symptoms. Mutations in the SNCA gene occur in early-onset Parkinson’s disease. The PARK2 gene makes the protein parkin, which normally helps cells break down and recycle proteins. Mutations in this gene cause a rare form of early-onset Parkinson’s disease. The PARK7 gene makes a protein called DJ-1. DJ-1 protects against mitochondrial stress. The protein made by PINK1 is a protein kinase. Kinase is a an enzyme that catalyzes the transfer of a phosphate group to a specified molecule. Kinase protects mitochondria. Mitochondria is the powerhouse of the cell and the structure inside the cell. PINK1 mutations occur in early-onset Parkinson’s disease. The protein made by LRRK2 is also a protein kinase. Mutations in the LRRK2 gene have been linked to late-onset Parkinson’s disease. Among inherited cases of Parkinson’s, the inheritance patterns differ depending on the genes involved. If the LRRK2 or SNCA genes are involved, Parkinson’s is most likely inherited from just one parent. That is called an autosomal dominant pattern. An autosomal dominant pattern is when you only need one copy of a gene to be altered for the disorder to happen. If the PARK2, PARK7 or PINK1 gene is involved, it’s typically in an autosomal recessive pattern. An autosomal recessive pattern is when you need two copies of the gene altered for the disorder to happen. That means that two copies of the gene in each cell have been altered. Both parents passed on the altered gene but may not have had any signs of Parkinson’s disease themselves. It’s still unknown if there are any other genes, mutations, and factors that can cause Parkinson’s disease but maybe one day we will find out the answer. </p>
-                  <div class="images">
-                    <div class="image">
-                      <img src="static\r4.webp" alt="">
-                    </div>
-                  </div>
+                <div class="algorithms">
+                    <h1>Our Algorithms</h1>
+                    <p>Coming soon!</p>
                 </div>
+            </main>
 
-
-              </div>
-              <div class="scroll-links">
-                <a href="spotlight.html#one">1</a>
-                <a href="spotlight.html#two">2</a>
-                <a href="spotlight.html#three">3</a>
-              </div>
-            </div>
-
-          </div>
-          <div class="algorithms">
-            <h1>Our Algorithms</h1>
-            <p>Coming soon!</p>
-          </div>
-        </main>
-
-        <main class="contact-us" id="contact">
-          <div class="links">
-            <p>-</p>
-            <a href="https://discord.gg/n6Et39M2Bs"><img src="static\discord.png" alt=""></a>
-            <a href="https://www.tiktok.com/@neurocatalyst?_t=8l3rgLsFCNW&_r=1"><img src="static\tiktok.png" alt=""></a>
-            <a href="https://www.instagram.com/neurocatalyst/"><img src="static\insta.png" alt=""></a>
-            <a href="https://www.linkedin.com/company/neurocatalyst/?viewAsMember=true"><img src="static\linkedin.png" alt=""></a>
-            <a href="mailto:neurocatalystofficial@gmail.com"><img src="static\email.png" alt=""></a>
-            <a href="tel:+12487815698"><img src="static\phone.png" alt=""></a>
-            <p>-</p>
-          </div>
-          <p>© 2024 by NeuroCatalyst.</p>
-        </main>
-
-      </div>
+            <main class="contact-us" id="contact">
+                <div class="links">
+                    <p>-</p>
+                    <a href="https://discord.gg/n6Et39M2Bs"><img src="static/discord.png" alt=""></a>
+                    <a href="https://www.tiktok.com/@neurocatalyst?_t=8l3rgLsFCNW&_r=1"><img src="static/tiktok.png" alt=""></a>
+                    <a href="https://www.instagram.com/neurocatalyst/"><img src="static/insta.png" alt=""></a>
+                    <a href="https://www.linkedin.com/company/neurocatalyst/?viewAsMember=true"><img src="static/linkedin.png" alt=""></a>
+                    <a href="mailto:neurocatalystofficial@gmail.com"><img src="static/email.png" alt=""></a>
+                    <a href="tel:+12487815698"><img src="static/phone.png" alt=""></a>
+                    <p>-</p>
+                </div>
+                <p>© 2024 by NeuroCatalyst.</p>
+            </main>
+        </div>
     </div>
-  </body>
+</body>
 </html>
